@@ -1,0 +1,3 @@
+git tag -a v1.0.0 -m "first tag"
+
+git push origin --tags

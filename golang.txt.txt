@@ -1,0 +1,2 @@
+//install gin to run cmd
+go get github.com/codegangsta/gin
