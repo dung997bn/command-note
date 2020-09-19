@@ -1,0 +1,15 @@
+create index
+
+postman : PUT Method
+
+url: http://127.0.0.1:9200/items
+
+body: 
+{
+	"settings":{
+		"index":{
+			"number_of_shards":4,
+			"number_of_replicas":2 
+		}
+	}
+}
