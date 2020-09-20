@@ -13,3 +13,34 @@ body:
 		}
 	}
 }
+
+
+
+
+
+
+
+
+Search Method:
+
+json body :
+
+
+
+
+{
+	"equals":[
+		{
+			"field":"available_quantity",
+			"value":10
+		},
+		{
+			"field":"title",
+			"value":"this is title"
+		}
+	],
+	"not_equals":[
+		
+		
+	]
+}
