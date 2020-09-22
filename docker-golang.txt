@@ -1,0 +1,30 @@
+GOPATH: C:\Users\HALO-KIRIN\go
+REPO URL : github.com/dung997bn/bookstore_items_api
+
+
+
+
+
+docker file
+
+
+#build stage
+FROM golang:alpine AS builder
+
+#Configure
+ENV REPO_URL=github.com/dung997bn/bookstore_items_api
+ENV GOPATH=/app
+ENV APP_PATH=${GOPATH}/src/$REPO_URL
+
+ENV WORK_PATH=${APP_PATH}/src
+
+#Copy the entire source code from the current directory (src) to ${WORK_PATH}
+COPY src ${WORK_PATH}
+WORKDIR ${WORK_PATH}
+
+RUN go build -o items-api.exe .
+
+#expose port 8082
+EXPOSE 8082
+
+CMD [ "./items-api.exe" ]
