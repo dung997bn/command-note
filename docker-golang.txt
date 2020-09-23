@@ -3,6 +3,14 @@ REPO URL : github.com/dung997bn/bookstore_items_api
 
 
 
+--build image
+docker build -t items-api .
+
+
+run / create container
+docker run -p 8082:8082 items-api:latest
+
+
 
 
 docker file
