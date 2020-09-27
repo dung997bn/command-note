@@ -1,0 +1,9 @@
+CREATE USER solardev WITH PASSWORD 'solar123';
+
+ CREATE DATABASE solardev;
+
+GRANT ALL PRIVILEGES ON DATABASE solardev TO USER solardev;
+
+
+--change connection
+ \c solardev solardev;
