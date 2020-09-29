@@ -1,0 +1,23 @@
+************************MONGO***********************
+--create port moongo
+ docker run -d -p 27017:27017 --name aspnetrun-mongo mongo
+
+
+--go to mongo command
+ docker exec -it aspnetrun-mongo /bin/bash
+
+--run in command
+mongo
+
+--
+show dbs
+
+--
+use CatalogDb
+
+--
+ db.createCollection('Products')
+
+--
+db.Products.insertMany({})
+db.Products.find({}).pretty()

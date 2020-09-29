@@ -1,6 +1,0 @@
- --list container
-docker container ls
-
---remove
-
-docker rm
