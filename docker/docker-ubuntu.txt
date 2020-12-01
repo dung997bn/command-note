@@ -1,0 +1,9 @@
+docker run -dit -P --name ubuntu_test1_lvc -v D:\SVN_Git\docker_mag\sample:/data -p 3000:3000  ubuntu:16.04
+				--D:\SVN_Git\docker_mag\sample:/data 
+					D:\SVN_Git\docker_mag\sample : Windows path
+					/data 			     : Path in container
+
+
+docker attach ubuntu_test1 			
+		--attach to use cmd
+
