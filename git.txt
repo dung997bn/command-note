@@ -5,3 +5,8 @@ git push origin --tags
 
 
 
+
+git credential-manager uninstall --force
+
+
+
