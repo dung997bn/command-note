@@ -1,0 +1,282 @@
+[
+  {
+    "DrawerStickerCategory": {
+      "id": 52,
+      "title": "図形・シェイプ",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/original_basic_8side_polygon_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/original_basic_8side_polygon_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 55,
+      "title": "矢印",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_arrow_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_arrow_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 43,
+      "title": "ハート",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_heart_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_heart_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 53,
+      "title": "星・キラキラ",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_star_sparkles_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_star_sparkles_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 46,
+      "title": "フレーム・装飾",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_frame_antique_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_frame_antique_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 38,
+      "title": "アート",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_art_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_art_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 41,
+      "title": "スポーツ",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_dance_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_dance_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 56,
+      "title": "背番号",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/original_number_line2_00.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/original_number_line2_00.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 48,
+      "title": "ミュージック",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_music_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_music_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 54,
+      "title": "植物",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_plant_flower_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_plant_flower_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 51,
+      "title": "動物・アニマル",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_animal_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_animal_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 45,
+      "title": "フード",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_food_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_food_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 47,
+      "title": "マリン",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_marine_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_marine_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 40,
+      "title": "キッズ・ベビー",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_baby_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_baby_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 50,
+      "title": "乗り物",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_vehicle_airship_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_vehicle_airship_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 39,
+      "title": "イベント",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_event_birthday_text_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_event_birthday_text_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 59,
+      "title": "飾り文字",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_decoration_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_decoration_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 44,
+      "title": "ファッション",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_fashion_cosmetics_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_fashion_cosmetics_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 58,
+      "title": "雑貨・モチーフ",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_feather_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_feather_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 57,
+      "title": "表情",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_face_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_face_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 49,
+      "title": "ロック・スカル",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_tribal_fire_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_tribal_fire_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 37,
+      "title": "JAPAN",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_japanfuji_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_japanfuji_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 42,
+      "title": "その他",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_cupid_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_cupid_001.svg"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 1,
+      "title": "子供",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Drawer/Stickers/babe/Babys-Room.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedStickers/Babys-Room.svg.png"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 2,
+      "title": "キュート",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/svg/Lips.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedStickers/Lips.svg.png"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 3,
+      "title": "カッコいい",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/svg/New.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedStickers/New.svg.png"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 4,
+      "title": "ほんわか",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/svg/Teddy-Bear.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedStickers/Teddy-Bear.svg.png"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 5,
+      "title": "シュール",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/svg/Decision.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedStickers/Decision.svg.png"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 6,
+      "title": "ネタ",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/svg/Mens-Underwear.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedStickers/Mens-Underwear.svg.png"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 7,
+      "title": "動物",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/svg/Bird.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedStickers/Bird.svg.png"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 8,
+      "title": "人物",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/svg/Skull.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedStickers/Skull.svg.png"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 9,
+      "title": "スポーツ",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/svg/Trophy.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedStickers/Trophy.svg.png"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 10,
+      "title": "旅行",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/svg/Palm-Tree.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedStickers/Palm-Tree.svg.png"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 11,
+      "title": "シンボル",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/svg/Statue-of-Liberty.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedStickers/Statue-of-Liberty.svg.png"
+    }
+  },
+  {
+    "DrawerStickerCategory": {
+      "id": 13,
+      "title": "クリスマス",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/christmas/1.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Stickers/christmas/1.svg"
+    }
+  }
+]

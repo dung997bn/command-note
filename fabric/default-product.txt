@@ -1,0 +1,81 @@
+{
+  "Product": {
+    "id": "IT001",
+    "full_print": 0,
+    "title": "定番Ｔシャツ",
+    "embroider_able": 1,
+    "special_draw": 0,
+    "category_id": 1,
+    "price": 1200,
+    "size": "120～XXXL",
+    "material": "綿100％",
+    "color_total": "全52色",
+    "sale_price": 1000,
+    "tool_price": 2000,
+    "item_code_nominal": "00085-CVT "
+  },
+  "colors": [
+    {
+      "ProductColor": {
+        "id": "ITSU0001",
+        "title": "ホワイト",
+        "value": "#ffffff",
+        "is_main": 1
+      },
+      "sides": [
+        {
+          "ProductColorSide": {
+            "id": "1",
+            "name": "1",
+            "title": "表",
+            "image_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/thumbnail/00085-CVT_001_01.png",
+            "print_price": 800,
+            "content": "{\"id\":\"1\",\"imageUrl\":\"https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/fullsize/00085-CVT_001_01.png\",\"size\":{\"cm\":{\"width\":1000,\"height\":954},\"pixel\":{\"width\":1000,\"height\":954}},\"canvas\":{\"objects\":[],\"background\":\"#ffffff\",\"backgroundImage\":{\"type\":\"image\",\"originX\":\"center\",\"originY\":\"center\",\"left\":0,\"top\":0,\"width\":1000,\"height\":954,\"fill\":\"rgb(0,0,0)\",\"stroke\":null,\"strokeWidth\":0,\"strokeDashArray\":null,\"strokeLineCap\":\"butt\",\"strokeLineJoin\":\"miter\",\"strokeMiterLimit\":10,\"scaleX\":0.73,\"scaleY\":0.73,\"angle\":0,\"flipX\":false,\"flipY\":false,\"opacity\":0.5,\"shadow\":null,\"visible\":true,\"clipTo\":null,\"backgroundColor\":\"\",\"fillRule\":\"nonzero\",\"globalCompositeOperation\":\"source-over\",\"transformMatrix\":null,\"skewX\":0,\"skewY\":0,\"uuid\":\"7d55846954a24821a426b83a858bd5b9\",\"src\":\"https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/fullsize/00085-CVT_001_01.png\",\"filters\":[],\"resizeFilters\":[],\"crossOrigin\":\"anonymous\",\"alignX\":\"none\",\"alignY\":\"none\",\"meetOrSlice\":\"meet\"}},\"border\":{\"cm\":{\"left\":308,\"top\":213,\"width\":385,\"height\":522},\"paths\":[\"M308 213 h385 v522 h-385 Z\"],\"pixel\":{\"left\":308,\"top\":213,\"width\":385,\"height\":522}},\"border_special\":[{\"cm\":{\"left\":310,\"top\":215,\"width\":170,\"height\":170},\"paths\":[\"M0 0 h171 v171 h-171 Z\"],\"pixel\":{\"left\":310,\"top\":215,\"width\":170,\"height\":170},\"name\":\"left\"},{\"cm\":{\"left\":521,\"top\":215,\"width\":170,\"height\":170},\"paths\":[\"M213 0 h171 v171 h-171 Z\"],\"pixel\":{\"left\":521,\"top\":215,\"width\":170,\"height\":170},\"name\":\"right\"}]}",
+            "content_over_flow": null,
+            "overlay_image": null,
+            "is_main": 1
+          }
+        },
+        {
+          "ProductColorSide": {
+            "id": "2",
+            "name": "2",
+            "title": "裏",
+            "image_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/thumbnail/00085-CVT_001_02.png",
+            "print_price": 800,
+            "content": "{\"id\":\"2\",\"imageUrl\":\"https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/fullsize/00085-CVT_001_02.png\",  \"size\":{\"cm\":{\"width\":1000,\"height\":933},\"pixel\":{\"width\":1000,\"height\":933}},\"canvas\":{\"objects\":[],\"background\":\"#ffffff\",\"backgroundImage\":{\"type\":\"image\",\"originX\":\"center\",\"originY\":\"center\",\"left\":0,\"top\":0,\"width\":1000,\"height\":933,\"fill\":\"rgb(0,0,0)\",\"stroke\":null,\"strokeWidth\":0,\"strokeDashArray\":null,\"strokeLineCap\":\"butt\",\"strokeLineJoin\":\"miter\",\"strokeMiterLimit\":10,\"scaleX\":0.73,\"scaleY\":0.73,\"angle\":0,\"flipX\":false,\"flipY\":false,\"opacity\":0.5,\"shadow\":null,\"visible\":true,\"clipTo\":null,\"backgroundColor\":\"\",\"fillRule\":\"nonzero\",\"globalCompositeOperation\":\"source-over\",\"transformMatrix\":null,\"skewX\":0,\"skewY\":0,\"uuid\":\"7d55846954a24821a426b83a858bd5b9\",\"src\":\"https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/fullsize/00085-CVT_001_02.png\",  \"filters\":[],\"resizeFilters\":[],\"crossOrigin\":\"anonymous\",\"alignX\":\"none\",\"alignY\":\"none\",\"meetOrSlice\":\"meet\"}},\"border\":{\"cm\":{\"left\":307,\"top\":138,\"width\":385,\"height\":522},\"pixel\":{\"left\":307,\"top\":138,\"width\":385,\"height\":522}}}",
+            "content_over_flow": null,
+            "overlay_image": null,
+            "is_main": 0
+          }
+        },
+        {
+          "ProductColorSide": {
+            "id": "3",
+            "name": "3",
+            "title": "左袖",
+            "image_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/thumbnail/sleeve_left_001.png",
+            "print_price": 500,
+            "content": "{  \"id\": \"3\",  \"imageUrl\": \"https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/fullsize/sleeve_left_001.png\",  \"size\": {    \"cm\": {    \"width\": 2057,    \"height\": 2037    },    \"pixel\": {    \"width\": 2057,    \"height\": 2037    }  },  \"canvas\": {    \"objects\": [],    \"background\": \"#ffffff\",    \"backgroundImage\": {      \"type\": \"image\",      \"originX\": \"center\",      \"originY\": \"center\",      \"left\": 0,      \"top\": 0,      \"width\": 2057,      \"height\": 2037,      \"fill\": \"rgb(0,0,0)\",      \"stroke\": null,      \"strokeWidth\": 0,      \"strokeDashArray\": null,      \"strokeLineCap\": \"butt\",      \"strokeLineJoin\": \"miter\",      \"strokeMiterLimit\": 10,      \"scaleX\": 0.73,      \"scaleY\": 0.73,      \"angle\": 0,      \"flipX\": false,      \"flipY\": false,      \"opacity\": 0.5,      \"shadow\": null,      \"visible\": true,      \"clipTo\": null,      \"backgroundColor\": \"\",      \"fillRule\": \"nonzero\",      \"globalCompositeOperation\": \"source-over\",      \"transformMatrix\": null,      \"skewX\": 0,      \"skewY\": 0,      \"uuid\": \"7d55846954a24821a426b83a858bd5b9\",      \"src\": \"https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/fullsize/sleeve_left_001.png\",      \"filters\": [],      \"resizeFilters\": [],      \"crossOrigin\": \"anonymous\",      \"alignX\": \"none\",      \"alignY\": \"none\",      \"meetOrSlice\": \"meet\"    }  },  \"border\": {      \"cm\": {    \"left\": 874,    \"top\": 882,    \"width\": 588,    \"height\": 588      },  \"pixel\": {    \"left\": 874,    \"top\": 882,    \"width\": 588,    \"height\": 588      }  }}        ",
+            "content_over_flow": null,
+            "overlay_image": null,
+            "is_main": 0
+          }
+        },
+        {
+          "ProductColorSide": {
+            "id": "4",
+            "name": "4",
+            "title": "右袖",
+            "image_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/thumbnail/sleeve_right_001.png",
+            "print_price": 500,
+            "content": "{  \"id\": \"4\",  \"imageUrl\": \"https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/fullsize/sleeve_right_001.png\",  \"size\": {    \"cm\": {    \"width\": 2057,    \"height\": 2037    },    \"pixel\": {    \"width\": 2057,    \"height\": 2037    }  },  \"canvas\": {    \"objects\": [],    \"background\": \"#ffffff\",    \"backgroundImage\": {      \"type\": \"image\",      \"originX\": \"center\",      \"originY\": \"center\",      \"left\": 0,      \"top\": 0,      \"width\": 2057,      \"height\": 2037,      \"fill\": \"rgb(0,0,0)\",      \"stroke\": null,      \"strokeWidth\": 0,      \"strokeDashArray\": null,      \"strokeLineCap\": \"butt\",      \"strokeLineJoin\": \"miter\",      \"strokeMiterLimit\": 10,      \"scaleX\": 0.73,      \"scaleY\": 0.73,      \"angle\": 0,      \"flipX\": false,      \"flipY\": false,      \"opacity\": 0.5,      \"shadow\": null,      \"visible\": true,      \"clipTo\": null,      \"backgroundColor\": \"\",      \"fillRule\": \"nonzero\",      \"globalCompositeOperation\": \"source-over\",      \"transformMatrix\": null,      \"skewX\": 0,      \"skewY\": 0,      \"uuid\": \"7d55846954a24821a426b83a858bd5b9\",      \"src\": \"https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Products/fullsize/sleeve_right_001.png\",      \"filters\": [],      \"resizeFilters\": [],      \"crossOrigin\": \"anonymous\",      \"alignX\": \"none\",      \"alignY\": \"none\",      \"meetOrSlice\": \"meet\"    }  },  \"border\": {      \"cm\": {    \"left\": 643,    \"top\": 874,    \"width\": 588,    \"height\": 588      },      \"pixel\": {    \"left\": 643,    \"top\": 874,    \"width\": 588,    \"height\": 588      }  }}        ",
+            "content_over_flow": null,
+            "overlay_image": null,
+            "is_main": 0
+          }
+        }
+      ]
+    }
+  ]
+}

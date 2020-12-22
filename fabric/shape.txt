@@ -1,0 +1,210 @@
+[
+  {
+    "DrawerShapeCategory": {
+      "id": 1,
+      "title": "矢印",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Drawer/Shapes/arrows/Down-Filled.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Down-Filled.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 2,
+      "title": "人物",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Drawer/Shapes/person/Contacts.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Contacts.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 3,
+      "title": "アルファベット",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/alphabet.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/alphabet.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 4,
+      "title": "ベーシック図形",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/messaging.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/messaging.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 5,
+      "title": "シンボル",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/symbols.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/symbols.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 6,
+      "title": "矢印",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Arrow.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Arrow.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 7,
+      "title": "フレーム装飾",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Frame.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Frame.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 8,
+      "title": "スポーツ",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Trophy.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Trophy.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 9,
+      "title": "人物",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Men_Age_Group_2.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Men_Age_Group_2.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 10,
+      "title": "ミュージック",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Musical.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Musical.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 11,
+      "title": "ショッピング",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Shopping_Basket.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Shopping_Basket.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 12,
+      "title": "ファッション",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Bow_Tie.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Bow_Tie.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 13,
+      "title": "遊戯",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Carousel.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Carousel.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 14,
+      "title": "植物",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Garden_Gloves.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Garden_Gloves.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 15,
+      "title": "動物",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Bird.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Bird.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 16,
+      "title": "フード・ドリンク",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Croissant.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Croissant.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 17,
+      "title": "マリン・サーフ",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Swimming.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Swimming.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 18,
+      "title": "アニバーサリー",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Crown.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Crown.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 19,
+      "title": "バースデー",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Party_Hat_with_Stars.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Party_Hat_with_Stars.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 20,
+      "title": "ロック・スカル",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Skull.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Skull.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 21,
+      "title": "和",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Torii.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Torii.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 22,
+      "title": "電子機器",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Compact_Camera.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Compact_Camera.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 23,
+      "title": "数字",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/1.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/1.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 24,
+      "title": "表情",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/Shapes/svg/Happy.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.up-t.jp/RasterizedShapes/Happy.svg.png"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 38,
+      "title": "アート",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_art_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_art_001.svg"
+    }
+  },
+  {
+    "DrawerShapeCategory": {
+      "id": 39,
+      "title": "イベント",
+      "content_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_event_birthday_text_001.svg",
+      "preview_url": "https://s3-ap-northeast-1.amazonaws.com/storage.budgets.jp/Shapes/svg/123rf_event_birthday_text_001.svg"
+    }
+  }
+]
