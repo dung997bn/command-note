@@ -1,0 +1,44 @@
+[
+  {
+    "CategoryStyle": {
+      "id": 1,
+      "name": "CATEGORY_CLOTHER",
+      "title": "Tシャツ・衣類"
+    }
+  },
+  {
+    "CategoryStyle": {
+      "id": 4,
+      "name": "CATEGORY_MOBILE",
+      "title": "スマホケース"
+    }
+  },
+  {
+    "CategoryStyle": {
+      "id": 3,
+      "name": "CATEGORY_OTHER",
+      "title": "雑貨類"
+    }
+  },
+  {
+    "CategoryStyle": {
+      "id": 2,
+      "name": "CATEGORY_FLAG",
+      "title": "のぼり旗"
+    }
+  },
+  {
+    "CategoryStyle": {
+      "id": 6,
+      "name": "CATEGORY_LASER",
+      "title": "きクセサリ"
+    }
+  },
+  {
+    "CategoryStyle": {
+      "id": 5,
+      "name": "CATEGORY_STONE",
+      "title": "パワーストーンアクセサリー"
+    }
+  }
+]
