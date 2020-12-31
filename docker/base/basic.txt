@@ -1,0 +1,57 @@
+Ctrl + P + Q : get out command without exit
+
+tạo 1 container
+		docker run  -it --name "ABC" -h centos1 300e315adb2f
+
+xóa 1 container (force)
+		docker rm -f 300e315a
+
+
+chạy cmd khi không attach
+		docker exec ubuntu_test1 ls
+
+
+docker exec -it U1 bash ==== docker attach U1  (ubuntu)
+
+
+save container => image
+		docker commit U1 ubuntu-vim:version1
+		--U1: name container
+		--ubuntu-vim:version1: name images
+
+
+save image to file
+		docker save --output myimage.tar d337d26fd6a6
+		--myimage.tar: file name
+		--d337d26fd6a6: name image
+
+load image from file
+		 docker load -i myimage.tar
+		--myimage.tar: path of file
+
+rename
+		docker tag  d337d26fd6a6  newimage:version2
+
+
+shared folder with host and container
+		 docker run -it -v D:/TestDocker:/www/data d337d26fd6a6
+			--D:/TestDocker : path of computer
+			--/www/data : path on ubuntu
+			--d337d26fd6a6 :image
+
+tạo container C2 có folder giống với C1
+ docker run -it --name C2 --volumes-from C1 ubuntu:latest
+
+
+
+Tạo một ổ đĩa( volume)
+		docker volume create D2
+
+Tạo 1 container C1 có thư mục /home/disk2 sử dụng ổ D2 để lưu trữ với image ubuntu:latest
+		docker run -it --name C1 --mount source=D2,target=/home/disk2 ubuntu:latest
+
+Tạo ổ đĩa DISK1 ứng với thư mục của máy host
+		docker create --opt device=D:/TestDocker/dulieu --opt type=none --opt o=bind DISK1
+
+Tạo 1 container C1 có thư mục /home/disk sử dụng ổ DISK1 để lưu trữ với image ubuntu:latest
+docker run -it -v DISK1:/home/disk ubuntu:latest

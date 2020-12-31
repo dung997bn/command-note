@@ -1,0 +1,19 @@
+docker run -it --rm busybox
+	tạo 1 container với image busybox (network default là bridge)
+	--rm : docker sẽ xóa container khi chạy xong
+
+docker run -it --name B3 --network network1 -p 9999:80 busybox
+	tạo 1 container với port 9999 trên máy host thông qua cổng 80, network là network1 
+
+docker run -it --name B2 -p 8889:80 busybox
+	tạo 1 container với image busybox với port 8889 trên máy host thông qua cổng 80
+
+docker network inspect bridge
+	kiểm tra network bridge
+
+docker network create --driver bridge network1
+	tạo 1 network có driver là bridge , tên là network1
+
+docker network connect bridge B3
+	container B3 có network là network1 kết nối tới network bridge 
+
