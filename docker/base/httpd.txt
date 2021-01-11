@@ -1,0 +1,26 @@
+
+docker run -d --name c-php -h php -v D:/TestDocker/mycode/:/home/mycode/  --network  www-net php:7.3-fpm
+
+
+ docker exec -it c-php bash
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker run --rm -v  D:/TestDocker/mycode/:/home/mycode/ httpd cp /usr/local/apache2/conf/httpd.conf /home/mycode
+
+
+
+docker run --network www-net --name c-httpd -h httpd -p 9997:80 -p 443:443  -v  D:/TestDocker/mycode/:/home/mycode/ -v  D:/TestDocker/mycode/httpd.conf:/usr/local/apache2/conf/httpd.conf httpd

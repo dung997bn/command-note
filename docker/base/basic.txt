@@ -1,7 +1,11 @@
+docker logs containerid
+
 Ctrl + P + Q : get out command without exit
 
 tạo 1 container
 		docker run  -it --name "ABC" -h centos1 300e315adb2f
+
+-d : chạy nền khi container tạo xong
 
 xóa 1 container (force)
 		docker rm -f 300e315a
