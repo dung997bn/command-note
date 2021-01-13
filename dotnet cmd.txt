@@ -4,3 +4,11 @@ dotnet new webapi -o SolarCoffee.Web
 
 
 dotnet sln add SolarCoffee.Web
+
+
+
+dotnet ef migrations add IdentityInitial -p Infrastructure -s API -o Identity/Migrations -c AppIdentityDbContext
+
+
+remove migration
+dotnet ef migrations remove -p Infrastructure -s API  -c AppIdentityDbContext
