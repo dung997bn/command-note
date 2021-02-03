@@ -1,0 +1,7 @@
+ CREATE USER 'appuser'@'localhost' IDENTIFIED BY 'Pa$$w0rd'
+
+GRANT ALL PRIVILEGES ON *.* TO 'appuser'@'localhost' WITH GRANT OPTION;
+
+
+
+FLUSH PRIVILEGES;
