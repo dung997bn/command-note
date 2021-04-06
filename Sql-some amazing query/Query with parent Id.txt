@@ -1,0 +1,7 @@
+; with r as(
+ select Id, Name , ParentId, 0  depth from Employee where ParentId is null
+ union all
+ (select b.Id,b.Name, b.ParentId, a.depth+1  depth from r a inner join Employee b on a.Id = b.ParentId)
+)
+
+select * from r order by r.depth
