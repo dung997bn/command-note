@@ -1,0 +1,193 @@
+--Query old : more than 1 minutes
+
+			SELECT 
+	                        A.NAME AS AFFILIATION_NAME,
+	                        B.NAME AS GENERAL_BRANCH_NAME,
+	                        C.SENATOR_ID,
+	                        (S.LAST_NAME + S.FIRST_NAME) AS SENATOR_FULL_NAME,
+	                        C.ELEC_CODE,	
+	                        E.CONGRESS_NAME AS ELECTION_NAME,
+	                        E.VOTE_DAY AS ELECTION_VOTE_DAY,
+                            C.RECUIREMENT_AMOUNT,
+                            C.SELF_FUNDED_AMOUNT,
+							C.incumbent AS INCUMBENT,
+	                        (CASE C.INCUMBENT 
+	                        WHEN 0 THEN C.RECUIREMENT_AMOUNT
+	                        WHEN 1 THEN C.SELF_FUNDED_AMOUNT 
+                            WHEN 2 THEN ISNULL(C.RECUIREMENT_AMOUNT,0) + ISNULL(C.SELF_FUNDED_AMOUNT,0)
+                            WHEN 3 THEN C.RECUIREMENT_AMOUNT
+	                        ELSE ISNULL(C.RECUIREMENT_AMOUNT,0) + ISNULL(C.SELF_FUNDED_AMOUNT,0)
+	                        END) AS CANDICATE_RECUIREMENT_OR_SELF_AMOUNT,
+	                        ISNULL(AP.PREF_COST,0) AS PREF_COST,
+	                        ISNULL(AP.COST,0) AS SUPPORT_COST,
+	                        ISNULL(AP.GENERAL_BRANCH_COST,0) AS GENERAL_BRANCH_COST,
+	                        ISNULL(X2.COUNT_DONATION,0)AS COUNT_DONATION,
+                            ISNULL(X2.DONATION_AMOUNT,0)AS DONATION_AMOUNT,
+	                        ISNULL(X1.COUNT_INTEREST,0) AS COUNT_INTEREST,
+                            ISNULL(X1.INTEREST_AMOUNT,0) AS INTEREST_AMOUNT,
+	                        ISNULL(Y.EXPENSE_ELECTION,0) AS EXPENSE_ELECTION,
+                            ISNULL(Y.EXPENSE_ELECTION_UNSPECIFIED,0) AS EXPENSE_ELECTION_UNSPECIFIED,
+	                        ISNULL(Y.EXPENSE_SUPPORT,0) AS EXPENSE_SUPPORT
+                        FROM 
+                        CANDICATE C INNER JOIN GENERAL_BRANCH B ON B.CODE = C.GENERAL_BRANCH_CODE
+	                        INNER JOIN AFFILIATION A ON A.CODE = B.PREF_CODE
+	                        INNER JOIN SENATOR S ON S.ID = C.SENATOR_ID
+	                        INNER JOIN ELECTION E ON C.ELEC_CODE = E.CODE
+	                        LEFT JOIN ADVANCE_PAYMENT_BUDGET AP ON AP.SENATOR_ID = C.SENATOR_ID AND AP.ELEC_CODE = C.ELEC_CODE	
+							 --Donation 
+	                        LEFT JOIN (SELECT SENATOR_ID, ELEC_CODE,
+					                        SUM(CASE TYPE_ID
+						                        WHEN 3 THEN 1			
+						                        ELSE 0
+					                        END) AS COUNT_INTEREST,
+					                        SUM(CASE TYPE_ID
+						                        WHEN 3 THEN D.AMOUNT
+						                        ELSE 0
+					                        END) AS INTEREST_AMOUNT
+									                        FROM DONATION D
+										                        INNER JOIN (SELECT MAX(ID) AS MAX_ID FROM DONATION GROUP BY PARENT_ID)D1 ON D.ID = D1.MAX_ID			
+									                        WHERE D.STATE = 9
+										                        AND D.DELETED_AT IS NULL
+									                        GROUP BY SENATOR_ID, ELEC_CODE) X1
+	                        ON C.SENATOR_ID = X1.SENATOR_ID AND C.ELEC_CODE = X1.ELEC_CODE
+							-- Donation_Report
+							LEFT JOIN (SELECT SENATOR_ID, ELEC_CODE, SUM( TOTAL_NUMBER) AS COUNT_DONATION, SUM(DR.amount) AS DONATION_AMOUNT 
+									                        FROM donation_report DR		
+									                        WHERE DR.DELETED_AT IS NULL
+									                        GROUP BY SENATOR_ID, ELEC_CODE) X2
+	                        ON C.SENATOR_ID = X2.SENATOR_ID AND C.ELEC_CODE = X2.ELEC_CODE
+	                        --Payment
+	                        LEFT JOIN (SELECT P.ELEC_CODE, P.SENATOR_ID,
+	                                            SUM((CASE BUDGET_EXPENSE_CLASSIFICATION_ID 
+	                                            WHEN 1 THEN P.AMOUNT
+	                                            ELSE 0
+	                                            END )) AS EXPENSE_ELECTION, 
+												SUM((CASE BUDGET_EXPENSE_CLASSIFICATION_ID 
+	                                            WHEN 2 THEN P.AMOUNT
+	                                            ELSE 0
+	                                            END )) AS EXPENSE_ELECTION_UNSPECIFIED, 
+	                                            SUM((CASE BUDGET_EXPENSE_CLASSIFICATION_ID 
+	                                            WHEN 3 THEN P.AMOUNT
+	                                            ELSE 0
+	                                            END)) AS EXPENSE_SUPPORT
+                                            FROM PAYMENT P
+                                            inner join 
+                                            (select max(no_history) as no_history, serial_number, elec_code from payment group by serial_number, elec_code) pm
+                                            on p.no_history = pm.no_history and p.serial_number = pm.serial_number and p.elec_code = pm.elec_code
+                                            WHERE P.STATE = 9
+	                                            AND P.DELETED_AT IS NULL	
+                                                AND (P.REASON_ID IS NULL OR P.REASON_ID NOT IN (1,3))
+		                                    GROUP BY P.ELEC_CODE, P.SENATOR_ID) Y
+		                                    ON C.SENATOR_ID = Y.SENATOR_ID AND C.ELEC_CODE = Y.ELEC_CODE
+                         WHERE C.DELETED_AT IS NULL
+                             --AND B.CODE = 'a0b10000000YdOnAAK'
+                             --AND E.VOTE_DAY >= @start_date
+                             --AND E.VOTE_DAY <= @end_dat
+                         ORDER BY ELECTION_VOTE_DAY, 
+				SUBSTRING(C.ELEC_CODE,1,7), 
+				C.RANK DESC,
+				C.AGE DESC,
+				S.CODE --SUBSTRING(C.ELEC_CODE,3,5),S.CODE
+
+
+
+Query new : 14 seconds
+		 DECLARE @don TABLE (MAX_ID INT )
+                        INSERT INTO @don
+                        SELECT MAX(ID) AS MAX_ID FROM DONATION 
+	                                    WHERE DELETED_AT IS NULL 
+	                                    GROUP BY PARENT_ID
+                        ----------
+                        SELECT 
+	                        A.NAME AS AFFILIATION_NAME,
+	                        B.NAME AS GENERAL_BRANCH_NAME,
+	                        C.SENATOR_ID,
+	                        (S.LAST_NAME + S.FIRST_NAME) AS SENATOR_FULL_NAME,
+	                        C.ELEC_CODE,	
+	                        E.CONGRESS_NAME AS ELECTION_NAME,
+	                        E.VOTE_DAY AS ELECTION_VOTE_DAY,
+                            C.RECUIREMENT_AMOUNT,
+                            C.SELF_FUNDED_AMOUNT,
+							C.incumbent AS INCUMBENT,
+                            E.pref_name AS PREF_NAME, 
+                            (case 
+				               when isnull(C.DISTRICT_NAME,'') =''  then E.congress_name 
+				               else C.DISTRICT_NAME
+							end ) as _displayName,  
+	                        (CASE C.INCUMBENT 
+	                        WHEN 0 THEN C.RECUIREMENT_AMOUNT
+	                        WHEN 1 THEN C.SELF_FUNDED_AMOUNT 
+                            WHEN 2 THEN ISNULL(C.RECUIREMENT_AMOUNT,0) + ISNULL(C.SELF_FUNDED_AMOUNT,0)
+                            WHEN 3 THEN C.RECUIREMENT_AMOUNT
+	                        ELSE ISNULL(C.RECUIREMENT_AMOUNT,0) + ISNULL(C.SELF_FUNDED_AMOUNT,0)
+	                        END) AS CANDICATE_RECUIREMENT_OR_SELF_AMOUNT,
+	                        ISNULL(AP.PREF_COST,0) AS PREF_COST,
+	                        ISNULL(AP.COST,0) AS SUPPORT_COST,
+	                        ISNULL(AP.GENERAL_BRANCH_COST,0) AS GENERAL_BRANCH_COST,
+	                        ISNULL(X2.COUNT_DONATION,0)AS COUNT_DONATION,
+                            ISNULL(X2.DONATION_AMOUNT,0)AS DONATION_AMOUNT,
+	                        ISNULL(X1.COUNT_INTEREST,0) AS COUNT_INTEREST,
+                            ISNULL(X1.INTEREST_AMOUNT,0) AS INTEREST_AMOUNT,
+	                        ISNULL(Y.EXPENSE_ELECTION,0) AS EXPENSE_ELECTION,
+                            ISNULL(Y.EXPENSE_ELECTION_UNSPECIFIED,0) AS EXPENSE_ELECTION_UNSPECIFIED,
+	                        ISNULL(Y.EXPENSE_SUPPORT,0) AS EXPENSE_SUPPORT
+                        FROM 
+                        CANDICATE C INNER JOIN GENERAL_BRANCH B ON B.CODE = C.GENERAL_BRANCH_CODE
+	                        INNER JOIN AFFILIATION A ON A.CODE = B.PREF_CODE
+	                        INNER JOIN SENATOR S ON S.ID = C.SENATOR_ID
+	                        INNER JOIN ELECTION E ON C.ELEC_CODE = E.CODE
+	                        LEFT JOIN ADVANCE_PAYMENT_BUDGET AP ON AP.SENATOR_ID = C.SENATOR_ID AND AP.ELEC_CODE = C.ELEC_CODE	
+							 --Donation 
+	                        LEFT JOIN (SELECT SENATOR_ID, ELEC_CODE,
+					                        SUM(CASE TYPE_ID
+						                        WHEN 3 THEN 1			
+						                        ELSE 0
+					                        END) AS COUNT_INTEREST,
+					                        SUM(CASE TYPE_ID
+						                        WHEN 3 THEN D.AMOUNT
+						                        ELSE 0
+					                        END) AS INTEREST_AMOUNT
+									                        FROM DONATION D
+										                        INNER JOIN (SELECT * FROM @don)D1 ON D.ID = D1.MAX_ID			
+									                        WHERE D.STATE = 9
+										                        AND D.DELETED_AT IS NULL
+									                        GROUP BY SENATOR_ID, ELEC_CODE) X1
+	                        ON C.SENATOR_ID = X1.SENATOR_ID AND C.ELEC_CODE = X1.ELEC_CODE
+							-- Donation_Report
+							LEFT JOIN (SELECT SENATOR_ID, ELEC_CODE, SUM( TOTAL_NUMBER) AS COUNT_DONATION, SUM(DR.amount) AS DONATION_AMOUNT 
+									                        FROM donation_report DR		
+									                        WHERE DR.DELETED_AT IS NULL
+									                        GROUP BY SENATOR_ID, ELEC_CODE) X2
+	                        ON C.SENATOR_ID = X2.SENATOR_ID AND C.ELEC_CODE = X2.ELEC_CODE
+	                        --Payment
+	                        LEFT JOIN (SELECT P.ELEC_CODE, P.SENATOR_ID,
+	                                            SUM((CASE BUDGET_EXPENSE_CLASSIFICATION_ID 
+	                                            WHEN 1 THEN P.AMOUNT
+	                                            ELSE 0
+	                                            END )) AS EXPENSE_ELECTION, 
+												SUM((CASE BUDGET_EXPENSE_CLASSIFICATION_ID 
+	                                            WHEN 2 THEN P.AMOUNT
+	                                            ELSE 0
+	                                            END )) AS EXPENSE_ELECTION_UNSPECIFIED, 
+	                                            SUM((CASE BUDGET_EXPENSE_CLASSIFICATION_ID 
+	                                            WHEN 3 THEN P.AMOUNT
+	                                            ELSE 0
+	                                            END)) AS EXPENSE_SUPPORT
+                                            FROM PAYMENT P
+                                            inner join 
+                                            (select max(no_history) as no_history, serial_number, elec_code from payment group by serial_number, elec_code) pm
+                                            on p.no_history = pm.no_history and p.serial_number = pm.serial_number and p.elec_code = pm.elec_code
+                                            WHERE P.STATE = 9
+	                                            AND P.DELETED_AT IS NULL	
+                                                AND (P.REASON_ID IS NULL OR P.REASON_ID NOT IN (1,3))
+		                                    GROUP BY P.ELEC_CODE, P.SENATOR_ID) Y
+		                                    ON C.SENATOR_ID = Y.SENATOR_ID AND C.ELEC_CODE = Y.ELEC_CODE
+                         WHERE C.DELETED_AT IS NULL
+                             --AND B.CODE = @general_branch_code
+                             --AND E.VOTE_DAY >= @start_date
+                             --AND E.VOTE_DAY <= @end_date 
+                         ORDER BY ELECTION_VOTE_DAY,
+								  SUBSTRING(C.ELEC_CODE,1,7), 
+								  C.RANK DESC,
+								  C.AGE DESC,
+								  S.CODE --SUBSTRING(C.ELEC_CODE,3,5),S.CODE
