@@ -1,0 +1,12 @@
+select * from Product where Name like '%chu%'
+select * from Product where contains(Name,'chu')
+
+--free text table	
+
+select * from FREETEXTTABLE(Product,Name,'wave honda')
+
+
+
+select id, name, key_tbl.[Key], key_tbl.Rank from Product p 
+inner join FREETEXTTABLE(Product,Name,'wave honda') key_tbl
+on p.ID=key_tbl.[Key]
